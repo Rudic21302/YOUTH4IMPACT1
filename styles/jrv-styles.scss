@@ -1,0 +1,355 @@
+
+
+//COLOR VARIABLES
+:root{
+    --primary-soft-yellow:#e6db6c;
+    --primary-dark-orange:   #e68a00;
+    --primary-hover-orange :#ff3300;
+    --primary-text-black :#212120;
+    --primary-dirt-white :#F9FBFF;
+    --primary-eggy-white:#fffeed;
+}
+.dark-theme{
+    --primary-soft-yellow:#0066ff;
+    --primary-dark-orange: #99bbff;
+    --primary-hover-orange:#F9FBFF;
+    --primary-text-black :#F9FBFF;
+    --primary-eggy-white:#202060;
+}
+//GENERAL
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-text-black);
+}
+section{
+    padding:24px;
+}
+
+.lead{
+    font-size: 24px !important; 
+    font-weight: bold;
+    color: var(--primary-text-black);
+ }
+ h2{
+    font-size: 24px !important; 
+    font-weight: bold;
+    color: var(--primary-text-black);
+ }
+ a:hover{
+    text-decoration: none;
+    color:var(--primary-hover-orange);
+ }
+ .landing-page{
+    background-color: #fffeed;
+}
+#change-color{
+    background-color: var(--primary-eggy-white) !important;
+}
+.just-page{
+    background-color: var(--primary-eggy-white) !important;
+}
+li{
+    list-style: none;
+}
+.benefit-btn:focus,
+.benefit-btn.active{
+    outline: none !important;
+    box-shadow: none !important;
+}
+ul, li {
+    margin: 0; padding: 0;
+}
+//scroll bar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:var(--primary-eggy-white );
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:var(--primary-soft-yellow);
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:var(--primary-dark-orange);
+ 
+  }
+//NAVBAR
+.navbar{
+    background-color: var(--primary-soft-yellow) !important;
+}
+.nav-link{
+    color: var(--primary-text-black);
+}
+.nav-item
+{
+    padding:8px;
+}
+.current-page{
+    font-weight: bold;
+}
+a.navbar-brand{
+    color:var(--primary-hover-orange);
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: var(--primary-hover-orange);
+}
+.nav-item.active .nav-link:hover{
+    color:var(--primary-text-black);
+}
+.navbar-brand-logo img{
+    width: 50px;
+    height: 100%;
+}
+
+.light-dark-switch{
+    padding: 0px;
+    margin-top: 18px;
+    border: none;
+}
+//HOMEPAGE COLOR SWITCHING
+.participate-in-project{
+    background-color: var(--primary-eggy-white) !important;
+}
+.benefits{
+    background-color: var(--primary-eggy-white) !important;
+}
+//ABOUT SITE
+#about-site {
+    height: 400px;
+    display: block;
+    position: relative;
+    color:#212120;
+    font-size: 18px;
+    text-align: center; 
+
+}
+#about-site p.lead{
+    color:#212120;
+}
+  #about-site::after {
+    content: "";
+    background: url(../img/about-site.jpg) ;
+    background-size: cover;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;   
+    z-index: -1;
+  }
+//learn more
+.learn-more-container{
+    margin-top: 18%;
+    position: relative; 
+ }
+ #learn-more-button{
+     background-color:var(--primary-soft-yellow);
+     padding: 8px;
+     min-width: 140px;
+     margin: 12px;
+     border-color: var(var(--primary-soft-yellow));
+     border-bottom-left-radius: 16px;
+     border-top-right-radius: 16px;
+ }
+ 
+ #learn-more-link{
+     color:var(--primary-text-black);
+     font-weight: 600;
+     font-size: 22px;
+ }
+ #learn-more-link:hover{
+     color:var(--primary-hover-orange);
+ }
+ //open-text
+ .open-text-btn:focus,
+ .open-text-btn.active{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.open-text-btn{
+    background-color:var(--primary-soft-yellow);
+    padding-top: 16px;
+    padding-bottom:16px;
+    font-weight: bolder;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    color: var(--primary-text-black);
+}
+.open-text-btn:hover{
+    color: var(--primary-hover-orange);
+}
+.open-text-content{
+    padding: 8px;
+    padding-left: 0px;
+    display: none;
+    margin: 8px;
+
+}
+.open-text-content.active{
+    display: block;
+}
+.open-text-content h2{
+    color: var(--primary-dark-orange);
+}
+.open-text-container{
+    display: flex;
+}
+.open-text-child{
+    flex:1;
+    
+}
+b.higlight-text{
+    color: var(--primary-dark-orange);
+}
+.open-text-btn.active,
+.open-text-btn.active:hover {
+    font-weight: bold;
+    color:var(--primary-hover-orange);
+}
+//slidding gallery
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img{
+    height: 100%;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:var(--primary-text-black);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color:var(--primary-soft-yellow);
+  opacity: 0.6;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.gallery-active, .dot:hover {
+  background-color: #717171;
+}
+
+
+//benefits
+.benefits{
+    color:#F9FBFF;
+}
+.benefit-list{
+    padding-left: -8px;
+}
+#benefit-container{
+    position: absolute;
+}
+.benefit-list-item h2{
+    text-align: right;
+    padding: 8px;
+    display:flex;
+}
+.benefit-row{
+    position: relative;
+}
+.benefit-btn.active,
+.benefit-btn.active:hover {
+    font-weight: bold;
+    color:var(--primary-dark-orange);
+}
+.benefit{
+    display:none;
+    
+}
+.benefit-lead{
+    padding-left:0px;
+}
+.benefit.active{
+    display: block;
+}
+.benefit-description{
+    padding:8px;
+    padding-left:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--primary-text-black);
+}
+.benefit-lead{
+    padding-left: 0px !important;
+}
+.benefit-image{
+    padding: 8px;
+    padding-left: 0px;
+    height: 200px;
+    width: 200px;
+}
+.benefit-text{
+    padding: 8px;
+}
+.benefit-lead{
+    padding-left:8px;
+}
+.benefit-btn{
+    font-weight: bold;
+    color:var(--primary-text-black);
+}
+.benefit-btn:hover{
+    color:var(--primary-hover-orange);
+}
+.benefit-list-item{
+    padding-left: 0px !important;
+}
+.benefit-list{
+    padding-bottom: 16px;
+}
+

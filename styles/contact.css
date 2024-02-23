@@ -1,0 +1,35 @@
+:root{
+    --primary-soft-yellow:#e6db6c;
+    --primary-dark-orange:   #e68a00;
+    --primary-hover-orange :#ff3300;
+    --primary-text-black :#212120;
+    --primary-dirt-white :#F9FBFF;
+    --primary-eggy-white:#fffeed;
+}
+.contact-submit{
+    color: var(--primary-text-black);
+    background-color: var(--primary-soft-yellow);
+}
+.contact-submit:hover,
+.contact-submit:active,
+.contact-submit:focus{
+    color: var(--primary-text-black) !important;
+    background-color: var(--primary-dark-orange) !important;
+}
+.list-group-item{
+    background-color: var(--primary-eggy-white);
+    padding-left: 0px;
+}
+.socials-list-item{
+    color:var(--primary-dark-orange);
+    font-size: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.socials-list-item:hover{
+    font-size: 28px;
+    padding: 0px;
+}
+i{
+    padding-right: 16px;
+}

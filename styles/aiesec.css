@@ -1,0 +1,15 @@
+:root{
+    --primary-soft-yellow:#e6db6c;
+    --primary-dark-orange:   #e68a00;
+    --primary-hover-orange :#ff3300;
+    --primary-text-black :#212120;
+    --primary-dirt-white :#F9FBFF;
+    --primary-eggy-white:#fffeed;
+}
+.aiesec-header{
+  
+    height: 400px;
+    width: 100%;
+      
+
+}
